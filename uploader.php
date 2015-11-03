@@ -20,38 +20,37 @@ while (($line = fgetcsv($file)) !== FALSE) {
 
 fclose($file);
 
+if ( !empty( $csvData )) {
+	$table = '<table>';
+	$colTag = 'td';
 
-$table = '<table>';
-$colTag = 'td';
+	foreach ($csvData as $counter => $tableRow) {
+		if ( $counter === 0 ) {
+			$table .= '<thead><tr>';
 
-foreach ($csvData as $counter => $tableRow) {
-	if ( $counter === 0 ) {
-		$table .= '<thead><tr>';
+			foreach ($tableRow as $tableItem) {
+				$table .= '<th>' . $tableItem . '</th>';
+			}
 
-		foreach ($tableRow as $tableItem) {
-			$table .= '<th>' . $tableItem . '</th>';
+			$table .= '</tr></thead>';
+		} else {
+
+			if ( $counter === 1 ) {
+				$table .= '<tbody>';
+			}
+
+			$table .= '<tr>';
+
+			foreach ($tableRow as $tableItem) {
+				$table .= '<td>' . $tableItem . '</td>';
+			}
+
+			$table .= '</tr>';
 		}
-
-		$table .= '</tr></thead>';
-	} else {
-
-		if ( $counter === 1 ) {
-			$table .= '<tbody>';
-		}
-
-		$table .= '<tr>';
-
-		foreach ($tableRow as $tableItem) {
-			$table .= '<td>' . $tableItem . '</td>';
-		}
-
-		$table .= '</tr>';
 	}
 
+	$table .= '</tbody>';
+	$table .= '</table>';
 
+	echo $table;
 }
-
-$table .= '</tbody>';
-$table .= '</table>';
-
-echo $table;
