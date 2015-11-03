@@ -10,7 +10,9 @@
 
 	<input type="file" class="csv-file" name="csv_file">
 
-
+	<div class="csv-content">
+		
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/app.js" type="text/javascript"></script>
