@@ -37,11 +37,12 @@ var App = function () {
 
 		$.ajax({
 			url: href,
+			method: 'post',
 			data: { csvData: csvData },
 			beforeSend: function () {
 
 			},
-			success: function () {
+			success: function ( data ) {
 
 			},
 			complete: function () {
