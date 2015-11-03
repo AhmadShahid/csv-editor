@@ -20,7 +20,7 @@ var App = function () {
 		$.ajax({
 			url: settings.uploadUrl,
 			method: 'post',
-			data: { data: result, name: fileName },
+			data: { data: result, fileName: fileName },
 			beforeSend: function () {
 
 			},
