@@ -14,6 +14,7 @@
 		table tbody tr:nth-child(even) { background-color: whitesmoke; }
 		.action-btns { margin-top: 15px; }
 		td:focus { outline: 1px dashed black; background: #ccc; }
+		.csv-content ul { line-height: 20px; margin: 20px 15px; }
 	</style>
 </head>
 <body>
