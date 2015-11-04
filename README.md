@@ -1,13 +1,10 @@
 # CSV Editor
 
 Edit your CSV data with no hassle.
-A simple utility that you can use to perform the following operations on your CSV files:
+A simple utility that you can use to edit (Delete rows, update, Sort etc) your CSV files
 
-- Update rows
-- Sort rows by columns
-- Delete rows
-
-**Why I created this?** because I had a few moments of free time and creating a utility that may help me (and you?!) in my usual activity of playing with CSV files in order to migrate data seemed like a good idea.
+## Why I created this? 
+Because I had a few moments of free time and creating a utility that may help me (and you?!) in my usual activity of playing with CSV files in order to migrate data seemed like a good idea.
 
 ## How to use?
 
@@ -30,6 +27,7 @@ You should expect following soon.
 - Generating SQL Queries
 - Generating XML file
 - Drag table columns
+- Add rows
 - Rename table headers
 - ..etc
 
