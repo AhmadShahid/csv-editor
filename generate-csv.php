@@ -11,7 +11,7 @@ function storeCsv($data, $fileName = 'updated-csv-file')
 	# add headers for each column in the CSV download
 	array_unshift($data, array_keys($data[0]));
 
-	$fileName = time() . '-' . $fileName;
+	$fileName = time() . '-' . $fileName . '.csv';
 	$filePath = 'uploads/' . $fileName;
 
 	$handle = fopen($filePath, 'w');
@@ -20,6 +20,18 @@ function storeCsv($data, $fileName = 'updated-csv-file')
 	}
 
 	fclose($handle);
+
+	if ( file_exists( $filePath )) {
+		return $filePath;
+	} else {
+		return false;
+	}
 }
 
-storeCsv( $csvData );
+$path = storeCsv( $csvData );
+
+if ( $path !== false ) {
+	echo json_encode([ 'filePath' => $path ]);
+} else {
+	echo json_encode([ 'filePath' => '' ]);
+}

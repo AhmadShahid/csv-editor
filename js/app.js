@@ -39,18 +39,17 @@ var App = function () {
 			url: href,
 			method: 'post',
 			data: { csvData: csvData },
-			beforeSend: function () {
-
-			},
+			dataType: 'json',
+			beforeSend: function () { },
 			success: function ( data ) {
-
+				if ( $.trim(data.filePath) === '' ) {
+					$('.csv-content').prepend('Unable to generate CSV. Maybe you should try again!');
+				} else {
+					window.location = data.filePath;
+				}
 			},
-			complete: function () {
-
-			},
-			error: function () {
-
-			}
+			complete: function () { },
+			error: function () { }
 		});
 	}
 
