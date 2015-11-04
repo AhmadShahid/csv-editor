@@ -7,7 +7,7 @@ A simple utility that you can use to perform the following operations on your CS
 - Sort rows by columns
 - Delete rows
 
-**Why I created this?** because I had a few minutes of free time today and I usually find myself playing with CSV files removing redundant data, compiling it from several files ordering it to make sense of data in order to migrate data and this little utility will come handy next time.
+**Why I created this?** because I had a few moments of free time and creating a utility that may help me (and you?!) in my usual activity of playing with CSV files in order to migrate data seemed like a good idea.
 
 ## How to use?
 
