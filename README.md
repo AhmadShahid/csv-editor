@@ -19,9 +19,8 @@ Or what you can do is navigate to this heroku app at [http://csv-editor.herokuap
 
 - **Quality of Code** The quality of code is not perfect at all. I just sat and unleashed my hands to the keyboard so please ignore it and do not make any judgements based upon the code quality.
 - **No validations or exception handling** There are no validations or exception handling stuff and it expects that happy path is followed.
-- 
-## Upcoming features
 
+## Upcoming features
 You should expect following soon.
 
 - Generating SQL Queries
