@@ -12,7 +12,7 @@ function storeCsv($data, $fileName = 'updated-csv-file')
 	array_unshift($data, array_keys($data[0]));
 
 	$fileName = time() . '-' . $fileName . '.csv';
-	$filePath = 'uploads/' . $fileName;
+	$filePath = 'temp/' . $fileName;
 
 	$handle = fopen($filePath, 'w');
 	foreach ($data as $row) {
