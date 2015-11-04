@@ -32,7 +32,7 @@ if ( !empty( $csvData )) {
 				$table .= '<th>' . $tableItem . '</th>';
 			}
 
-			$table .= '</tr></thead>';
+			$table .= '<th>Action</th></tr></thead>';
 		} else {
 
 			if ( $counter === 1 ) {
@@ -45,7 +45,7 @@ if ( !empty( $csvData )) {
 				$table .= '<td>' . $tableItem . '</td>';
 			}
 
-			$table .= '</tr>';
+			$table .= '<td><a class="delete-row" href="#">Delete</a></td></tr>';
 		}
 	}
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSV Sorter</title>
+	<title>CSV Editor</title>
 	<style type="text/css">
 		* { margin: 0; padding: 0; }
 		body { font-size: 14px; font-family: sans-serif; line-height: 30px; }
@@ -18,7 +18,7 @@
 <body>
 
 	<div class="page-wrap">
-		<h1>CSV Sorter</h1>
+		<h1>CSV Editor</h1>
 
 		<div class="uploader-content">
 			<p>Upload your CSV file below</p>

@@ -124,6 +124,11 @@ var App = function () {
 				e.preventDefault();
 				_generateCSV( $(this) );
 			});
+
+			$(document).on('click', '.delete-row', function ( e ) {
+				e.preventDefault();
+				$(this).closest('tr').remove();
+			});
 		}
 	}
 }
