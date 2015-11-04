@@ -21,7 +21,8 @@ while (($line = fgetcsv($file)) !== FALSE) {
 fclose($file);
 
 if ( !empty( $csvData )) {
-	$table = '<p>Click table headings to sort the table by column.</p><table>';
+	$table = '<p>Click table headings to sort the table by column.</p>';
+	$table .= '<p>Click any of the table elements to edit them</p><table>';
 	$colTag = 'td';
 
 	foreach ($csvData as $counter => $tableRow) {
@@ -42,7 +43,7 @@ if ( !empty( $csvData )) {
 			$table .= '<tr>';
 
 			foreach ($tableRow as $tableItem) {
-				$table .= '<td>' . $tableItem . '</td>';
+				$table .= '<td contenteditable="true">' . $tableItem . '</td>';
 			}
 
 			$table .= '<td><a class="delete-row" href="#">Delete</a></td></tr>';

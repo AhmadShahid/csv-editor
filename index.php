@@ -13,6 +13,7 @@
 		tr td { border: 1px solid #ccc; padding: 0 10px; }
 		table tbody tr:nth-child(even) { background-color: whitesmoke; }
 		.action-btns { margin-top: 15px; }
+		td:focus { outline: 1px dashed black; background: #ccc; }
 	</style>
 </head>
 <body>
