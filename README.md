@@ -4,7 +4,7 @@ Edit your CSV data with no hassle.
 A simple utility that you can use to edit (Delete rows, update, Sort etc) your CSV files
 
 ## Why I created this? 
-Because I had a few moments of free time and creating a utility that may help me (and you?!) in my usual activity of playing with CSV files in order to migrate data seemed like a good idea.
+Because I had a few minutes of free time and creating a utility that may help me (and you?!) in my usual activity of playing with CSV files in order to migrate data seemed like a good idea.
 
 ## How to use?
 
@@ -13,7 +13,7 @@ Because I had a few moments of free time and creating a utility that may help me
 - Make sure that the `temp` directory has write permissions
 - Point to the project in your browser and follow the steps in the below snapshot
 
-Or what you can do is navigate to this heroku app at [http://csv-editor.herokuapp.com/](http://csv-sorter.herokuapp.com/) and do your processing there.
+Or what you can do is navigate to this heroku app at [http://csv-editor.herokuapp.com/](http://csv-editor.herokuapp.com/) and do your processing there.
 
 ## Known Issues
 
@@ -27,6 +27,7 @@ You should expect following soon.
 - Generating XML file
 - Drag table columns
 - Add rows
+- Duplicating rows
 - Rename table headers
 - ..etc
 
