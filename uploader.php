@@ -21,7 +21,7 @@ while (($line = fgetcsv($file)) !== FALSE) {
 fclose($file);
 
 if ( !empty( $csvData )) {
-	$table = '<table>';
+	$table = '<p>Click table headings to sort the table by column.</p><table>';
 	$colTag = 'td';
 
 	foreach ($csvData as $counter => $tableRow) {
