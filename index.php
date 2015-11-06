@@ -15,6 +15,16 @@
 		.action-btns { margin-top: 15px; }
 		td:focus { outline: 1px dashed black; background: #ccc; }
 		.csv-content ul { line-height: 20px; margin: 20px 15px; }
+		.default-table .header-2 .up_arrow {position: static;display: inline-block !important;vertical-align: middle;height: 14px;margin: -3px 0 0 15px;}
+		.dwn_arrow {  background-image: url("images/drop_arrow.png");background-repeat: no-repeat;height: 10px;   right: 0px;top: 15px;width: 11px;display: inline-block;vertical-align: middle;position: absolute;}
+  		.sortWhat{  display: inline-block;position: relative;}
+  		.up_arrow {  background-image: url("images/up_arrow.png");background-repeat: no-repeat;height: 10px;width: 14px;display: inline-block;vertical-align: middle;position: static; margin: -7px 0 0 10px;}
+		.inlineD {display: inline-block !important;}
+		.hidden { visibility: hidden;}
+		.show { visibility: visible;}
+		.t11{top: 11px}
+		.t13{top: 13px}
+		.t8{top: 8px}
 	</style>
 </head>
 <body>

@@ -96,6 +96,19 @@ var App = function () {
 	 	$tbody.html( sortedHtml );
 	}
 
+	function toggleArrow(tipTarget) {
+	    // remove defualt asc and desc class from all others;
+	    $('.up_arrow').not($(this)).removeClass('hidden').addClass('inlineD');
+	    $('.dwn_arrow').not($(this)).removeClass('t11').removeClass('hidden').addClass('inlineD');
+	    if ( tipTarget.attr('data-order')=="desc" ){
+			tipTarget.find('i.dwn_arrow').removeClass('hidden').addClass('inlineD').addClass('t11');
+	    	tipTarget.find('i.up_arrow').addClass('hidden');
+	    } else {
+	    	tipTarget.find('i.up_arrow').removeClass('hidden').addClass('inlineD');
+	    	tipTarget.find('i.dwn_arrow').addClass('hidden');
+	    }
+	}
+
 	return {
 
 		init: function () {
@@ -118,6 +131,7 @@ var App = function () {
 			    $(this).attr('data-order', ($(this).attr('data-order') === 'desc' ? 'asc':'desc'));
 			   //Add aditional parameters to keep track column that was clicked
 			   _sortTable(this, $('.csv-content table thead th').index(this));
+			    toggleArrow($(this));
 			});
 
 			settings.dwldCsvBtn.on('click', function ( e ) {

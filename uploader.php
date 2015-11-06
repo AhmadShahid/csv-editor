@@ -30,9 +30,8 @@ if ( !empty( $csvData )) {
 			$table .= '<thead><tr>';
 
 			foreach ($tableRow as $tableItem) {
-				$table .= '<th>' . $tableItem . '</th>';
+				$table .= '<th> ' . $tableItem . ' <span class="text sortWhat"><i class="up_arrow icons"> </i><i class="dwn_arrow icons r0"></i></span></th>';
 			}
-
 			$table .= '<th>Action</th></tr></thead>';
 		} else {
 
